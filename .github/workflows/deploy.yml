@@ -40,7 +40,9 @@ jobs:
 
       - name: Build React app
         working-directory: src
-        run: npm run build
+        run: |
+          cp ../public/data.json public/data.json
+          npm run build
         env:
           # Vite needs this if repo is not at root (e.g. github.com/user/adf-dashboard)
           # Change to your actual repo name
@@ -51,3 +53,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: src/dist
+
