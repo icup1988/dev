@@ -1,0 +1,53 @@
+name: Process Excel & Deploy Dashboard
+
+on:
+  push:
+    paths:
+      - "data/*.xlsx"        # triggers only when you push a new Excel
+      - "src/**"             # or when you change the React app
+      - "scripts/**"         # or when you change the processing script
+  workflow_dispatch:         # allows manual trigger from GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install pandas openpyxl
+
+      - name: Process Excel → data.json
+        run: python scripts/process_excel.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: src/package-lock.json
+
+      - name: Install Node dependencies
+        working-directory: src
+        run: npm ci
+
+      - name: Build React app
+        working-directory: src
+        run: npm run build
+        env:
+          # Vite needs this if repo is not at root (e.g. github.com/user/adf-dashboard)
+          # Change to your actual repo name
+          VITE_BASE_PATH: /adf-dashboard/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: src/dist
