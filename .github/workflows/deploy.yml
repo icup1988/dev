@@ -44,7 +44,7 @@ jobs:
         env:
           # Vite needs this if repo is not at root (e.g. github.com/user/adf-dashboard)
           # Change to your actual repo name
-          VITE_BASE_PATH: /adf-dashboard/
+          VITE_BASE_PATH: /dev/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
