@@ -1,49 +1,38 @@
 {
   "meta": {
-    "source": "CostManagement_rg-dataplatform-prd_2026-04-25-2225.xlsx",
-    "generated": "2026-04-25",
-    "date_range": "2026-04-19 to 2026-04-25",
-    "adf_total": 1227.85
+    "source": "CostManagement_rg-dataplatform-prd_2026-04-26-1909.xlsx",
+    "generated": "2026-04-26",
+    "date_range": "2026-04-20 to 2026-04-26",
+    "adf_total": 1203.77
   },
   "dates": [
-    "2026-04-19",
     "2026-04-20",
     "2026-04-21",
     "2026-04-22",
     "2026-04-23",
     "2026-04-24",
-    "2026-04-25"
+    "2026-04-25",
+    "2026-04-26"
   ],
   "labels": [
-    "Sun · Apr 19",
     "Mon · Apr 20",
     "Tue · Apr 21",
     "Wed · Apr 22",
     "Thu · Apr 23",
     "Fri · Apr 24",
-    "Sat · Apr 25"
+    "Sat · Apr 25",
+    "Sun · Apr 26"
   ],
   "daily_total": {
-    "2026-04-19": 192.34,
     "2026-04-20": 259.3,
     "2026-04-21": 262.96,
     "2026-04-22": 139.56,
     "2026-04-23": 175.56,
     "2026-04-24": 127.1,
-    "2026-04-25": 71.03
+    "2026-04-25": 79.33,
+    "2026-04-26": 159.96
   },
   "daily_meter": {
-    "2026-04-19": {
-      "Cloud Data Movement": 84.15,
-      "Cloud Orchestration Activity Run": 88.46,
-      "vCore": 16.34,
-      "Cloud Pipeline Activity": 0.52,
-      "Self Hosted Data Movement": 1.02,
-      "Self Hosted Orchestration Activity Run": 1.84,
-      "Cloud Read Write Operations": 0.0,
-      "Cloud External Pipeline Activity": 0.0,
-      "Cloud Monitoring Operations": 0.0
-    },
     "2026-04-20": {
       "Cloud Data Movement": 166.08,
       "Cloud Orchestration Activity Run": 73.64,
@@ -100,26 +89,36 @@
       "Cloud Monitoring Operations": 0.0
     },
     "2026-04-25": {
-      "Cloud Data Movement": 36.9,
-      "Cloud Orchestration Activity Run": 16.74,
+      "Cloud Data Movement": 41.81,
+      "Cloud Orchestration Activity Run": 20.07,
       "vCore": 17.04,
-      "Cloud Pipeline Activity": 0.34,
+      "Cloud Pipeline Activity": 0.4,
       "Cloud Read Write Operations": 0.0,
       "Cloud External Pipeline Activity": 0.0
+    },
+    "2026-04-26": {
+      "Cloud Data Movement": 59.91,
+      "Cloud Orchestration Activity Run": 78.92,
+      "vCore": 17.83,
+      "Cloud Pipeline Activity": 0.42,
+      "Self Hosted Data Movement": 1.02,
+      "Self Hosted Orchestration Activity Run": 1.84,
+      "Cloud External Pipeline Activity": 0.0,
+      "Cloud Monitoring Operations": 0.0
     }
   },
   "meter_totals": {
-    "Cloud Data Movement": 670.66,
-    "Cloud Orchestration Activity Run": 419.83,
-    "vCore": 126.93,
-    "Cloud Pipeline Activity": 4.55,
+    "Cloud Data Movement": 651.33,
+    "Cloud Orchestration Activity Run": 413.62,
+    "vCore": 128.42,
+    "Cloud Pipeline Activity": 4.51,
     "Self Hosted Data Movement": 2.09,
     "Self Hosted Orchestration Activity Run": 3.71,
     "Cloud Read Write Operations": 0.06,
     "Cloud External Pipeline Activity": 0.01,
     "Cloud Monitoring Operations": 0.01
   },
-  "adf_total": 1227.85,
+  "adf_total": 1203.77,
   "top5_keys": [
     "json_api_main_orch",
     "api_get_data",
@@ -130,122 +129,122 @@
   "pipelines": {
     "json_api_main_orch": {
       "short": "json_api",
-      "total7d": 188.82,
+      "total7d": 186.69,
       "daily": [
-        2.13,
         66.7,
         66.73,
         8.29,
         43.34,
         1.63,
+        0.0,
         0.0
       ],
       "cdm": [
-        1.93,
         59.64,
         59.64,
         7.56,
         38.92,
         1.46,
+        0.0,
         0.0
       ],
       "orch": [
-        0.2,
         6.82,
         6.84,
         0.71,
         4.26,
         0.17,
+        0.0,
         0.0
       ]
     },
     "api_get_data": {
       "short": "api_get_data",
-      "total7d": 144.14,
+      "total7d": 136.59,
       "daily": [
-        14.28,
         32.29,
         39.02,
         17.71,
         25.02,
         15.83,
-        0.0
+        0.0,
+        6.73
       ],
       "cdm": [
-        3.16,
         12.62,
         15.3,
         6.83,
         9.58,
         5.95,
-        0.0
+        0.0,
+        0.25
       ],
       "orch": [
-        8.2,
         19.09,
         23.13,
         10.3,
         14.86,
         9.29,
-        0.0
+        0.0,
+        3.56
       ]
     },
     "api_ingest": {
       "short": "api_ingest",
-      "total7d": 112.69,
+      "total7d": 113.56,
       "daily": [
-        20.14,
         9.24,
         13.69,
         21.63,
         11.24,
         21.46,
-        15.3
+        15.3,
+        21.01
       ],
       "cdm": [
-        15.32,
         3.7,
         8.3,
         16.12,
         5.78,
         16.35,
-        10.4
+        10.4,
+        16.19
       ],
       "orch": [
-        4.71,
         5.43,
         5.28,
         5.4,
         5.34,
         5.0,
-        4.79
+        4.79,
+        4.71
       ]
     },
     "json_files_to_variant_main_orch": {
       "short": "json_files_to_variant",
       "total7d": 83.86,
       "daily": [
-        0.0,
         43.33,
         40.53,
+        0.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
       "cdm": [
-        0.0,
         39.78,
         37.22,
+        0.0,
         0.0,
         0.0,
         0.0,
         0.0
       ],
       "orch": [
-        0.0,
         3.43,
         3.21,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -256,13 +255,13 @@
       "short": "converge_aux_parse_data",
       "total7d": 80.3,
       "daily": [
-        40.15,
         8.03,
         8.03,
         8.03,
         8.03,
         8.03,
-        0.0
+        0.0,
+        40.15
       ],
       "cdm": [
         0.0,
@@ -274,33 +273,33 @@
         0.0
       ],
       "orch": [
-        40.15,
         8.03,
         8.03,
         8.03,
         8.03,
         8.03,
-        0.0
+        0.0,
+        40.15
       ]
     }
   },
   "pipeline_table": [
     {
       "name": "json_api_main_orch",
-      "totalCost": 188.82,
-      "cdm": 169.15,
-      "orch": 18.99
+      "totalCost": 186.69,
+      "cdm": 167.22,
+      "orch": 18.79
     },
     {
       "name": "api_get_data",
-      "totalCost": 144.14,
-      "cdm": 53.44,
-      "orch": 84.86
+      "totalCost": 136.59,
+      "cdm": 50.53,
+      "orch": 80.23
     },
     {
       "name": "api_ingest",
-      "totalCost": 112.69,
-      "cdm": 75.97,
+      "totalCost": 113.56,
+      "cdm": 76.84,
       "orch": 35.94
     },
     {
@@ -316,16 +315,16 @@
       "orch": 80.3
     },
     {
-      "name": "01_refresh_tagetik",
-      "totalCost": 73.08,
-      "cdm": 70.78,
-      "orch": 2.26
+      "name": "api_run_http",
+      "totalCost": 71.28,
+      "cdm": 40.53,
+      "orch": 30.71
     },
     {
-      "name": "api_run_http",
-      "totalCost": 62.81,
-      "cdm": 35.73,
-      "orch": 27.04
+      "name": "01_refresh_tagetik",
+      "totalCost": 69.1,
+      "cdm": 66.86,
+      "orch": 2.2
     },
     {
       "name": "converge_main_orch",
@@ -334,106 +333,100 @@
       "orch": 7.43
     },
     {
-      "name": "snowflake_raw_ingestion",
-      "totalCost": 39.98,
-      "cdm": 23.53,
-      "orch": 16.31
-    },
-    {
       "name": "converge_parse_data",
       "totalCost": 36.58,
       "cdm": 0.0,
       "orch": 36.58
     },
     {
+      "name": "snowflake_raw_ingestion",
+      "totalCost": 26.9,
+      "cdm": 12.47,
+      "orch": 14.35
+    },
+    {
       "name": "d365fo_generaljournalaccountentrybidventity",
-      "totalCost": 27.31,
-      "cdm": 27.23,
+      "totalCost": 26.81,
+      "cdm": 26.73,
       "orch": 0.07
     },
     {
       "name": "d365fo_generaljournalentry",
-      "totalCost": 25.07,
-      "cdm": 25.0,
+      "totalCost": 24.61,
+      "cdm": 24.53,
       "orch": 0.07
     },
     {
       "name": "process_master",
-      "totalCost": 22.42,
+      "totalCost": 21.66,
       "cdm": 0.0,
-      "orch": 22.08
+      "orch": 21.33
     },
     {
       "name": "csv_ingest",
-      "totalCost": 17.19,
+      "totalCost": 16.47,
       "cdm": 0.0,
-      "orch": 16.88
-    },
-    {
-      "name": "json_files_main_orch",
-      "totalCost": 15.15,
-      "cdm": 13.9,
-      "orch": 1.21
+      "orch": 16.18
     },
     {
       "name": "process_sequence",
-      "totalCost": 12.71,
+      "totalCost": 12.26,
       "cdm": 0.0,
-      "orch": 12.59
+      "orch": 12.15
     },
     {
-      "name": "d365fo_dimensionattributevaluecombination",
-      "totalCost": 11.21,
-      "cdm": 11.13,
-      "orch": 0.07
+      "name": "json_files_main_orch",
+      "totalCost": 11.39,
+      "cdm": 10.46,
+      "orch": 0.9
     },
     {
       "name": "json_load_to_sf",
-      "totalCost": 10.07,
+      "totalCost": 11.35,
       "cdm": 0.0,
-      "orch": 9.3
+      "orch": 10.49
+    },
+    {
+      "name": "d365fo_dimensionattributevaluecombination",
+      "totalCost": 11.19,
+      "cdm": 11.12,
+      "orch": 0.07
     },
     {
       "name": "d365fo_accountingdistribution",
-      "totalCost": 9.41,
-      "cdm": 9.33,
+      "totalCost": 9.91,
+      "cdm": 9.83,
       "orch": 0.07
     },
     {
       "name": "general_executor_run",
-      "totalCost": 8.1,
+      "totalCost": 7.51,
       "cdm": 0.0,
-      "orch": 8.04
+      "orch": 7.46
     },
     {
       "name": "transform_in_snowflake",
-      "totalCost": 6.54,
+      "totalCost": 6.34,
       "cdm": 0.0,
-      "orch": 6.28
-    },
-    {
-      "name": "check-task-status",
-      "totalCost": 5.31,
-      "cdm": 0.0,
-      "orch": 5.2
+      "orch": 6.09
     },
     {
       "name": "d365fo_vendtable",
-      "totalCost": 5.24,
-      "cdm": 5.17,
+      "totalCost": 5.26,
+      "cdm": 5.18,
       "orch": 0.07
     },
     {
       "name": "usecase_master",
-      "totalCost": 5.09,
+      "totalCost": 4.91,
       "cdm": 0.0,
-      "orch": 5.07
+      "orch": 4.9
     },
     {
-      "name": "spdataserver_main_orch",
-      "totalCost": 5.05,
-      "cdm": 4.25,
-      "orch": 0.78
+      "name": "check-task-status",
+      "totalCost": 4.83,
+      "cdm": 0.0,
+      "orch": 4.73
     },
     {
       "name": "excel_dynamic_load",
@@ -442,16 +435,16 @@
       "orch": 1.82
     },
     {
-      "name": "d365fo_subledgerjournalaccountentry",
-      "totalCost": 2.86,
-      "cdm": 2.78,
-      "orch": 0.07
+      "name": "spdataserver_main_orch",
+      "totalCost": 4.14,
+      "cdm": 3.52,
+      "orch": 0.61
     },
     {
-      "name": "pipeline_orch_caller",
-      "totalCost": 2.81,
-      "cdm": 0.0,
-      "orch": 2.81
+      "name": "d365fo_subledgerjournalaccountentry",
+      "totalCost": 2.84,
+      "cdm": 2.77,
+      "orch": 0.07
     },
     {
       "name": "d365fo_vendtrans",
@@ -460,22 +453,28 @@
       "orch": 0.07
     },
     {
+      "name": "pipeline_orch_caller",
+      "totalCost": 2.62,
+      "cdm": 0.0,
+      "orch": 2.62
+    },
+    {
       "name": "d365fo_purchline",
-      "totalCost": 2.54,
-      "cdm": 2.47,
+      "totalCost": 2.52,
+      "cdm": 2.45,
       "orch": 0.07
     },
     {
       "name": "global_main_orchestrator",
-      "totalCost": 2.36,
+      "totalCost": 2.31,
       "cdm": 0.0,
-      "orch": 2.34
+      "orch": 2.29
     },
     {
       "name": "snowflake_ingestion_orch",
-      "totalCost": 2.35,
+      "totalCost": 2.16,
       "cdm": 0.0,
-      "orch": 2.31
+      "orch": 2.12
     },
     {
       "name": "d365fo_taxtrans",
@@ -485,9 +484,9 @@
     },
     {
       "name": "sharepoint",
-      "totalCost": 1.53,
+      "totalCost": 1.55,
       "cdm": 0.48,
-      "orch": 1.05
+      "orch": 1.07
     },
     {
       "name": "d365fo_vendinvoicejour",
@@ -502,12 +501,6 @@
       "orch": 0.07
     },
     {
-      "name": "copy-from-sftp",
-      "totalCost": 1.4,
-      "cdm": 1.3,
-      "orch": 0.1
-    },
-    {
       "name": "d365fo_purchtable",
       "totalCost": 1.14,
       "cdm": 1.07,
@@ -518,6 +511,12 @@
       "totalCost": 1.01,
       "cdm": 0.93,
       "orch": 0.07
+    },
+    {
+      "name": "copy-from-sftp",
+      "totalCost": 0.86,
+      "cdm": 0.8,
+      "orch": 0.06
     },
     {
       "name": "d365fo_subledgerjournalentry",
@@ -629,15 +628,15 @@
     },
     {
       "name": "send_alerts",
-      "totalCost": 0.43,
+      "totalCost": 0.44,
       "cdm": 0.0,
-      "orch": 0.43
+      "orch": 0.44
     },
     {
       "name": "list_files_recursively",
-      "totalCost": 0.42,
+      "totalCost": 0.43,
       "cdm": 0.0,
-      "orch": 0.42
+      "orch": 0.43
     },
     {
       "name": "d365fo_load_dims",
@@ -688,16 +687,16 @@
       "orch": 0.06
     },
     {
-      "name": "range_date_calculator",
-      "totalCost": 0.06,
-      "cdm": 0.0,
-      "orch": 0.06
-    },
-    {
       "name": "sqls_get_data",
       "totalCost": 0.06,
       "cdm": 0.0,
       "orch": 0.03
+    },
+    {
+      "name": "range_date_calculator",
+      "totalCost": 0.05,
+      "cdm": 0.0,
+      "orch": 0.05
     },
     {
       "name": "d365fo_load_dwh",
